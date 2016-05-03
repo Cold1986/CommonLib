@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<objects>
+	<object name="Common.Logging.dll" description="spring.net使用"></object>
+	<object name="Spring.Core.dll" description="spring.net使用"></object>
+	<object name="Spring.Data.dll" description="spring.net使用"></object>
+	<object name="log4net.dll" description="log4net,日志用"></object>
+	<object name="MongoDB.dll" description="MongoDB使用"></object>
+	<object name="MongoDB.GridFS.dll" description="MongoDB使用"></object>
+	<object name="Newtonsoft.Json.dll" description="json转换用"></object>
+	<object name="nunit.framework.dll" description="nunit测试用"></object>
+
+	<object name="ServiceStack.Common.dll" description="redis用"></object>
+	<object name="ServiceStack.Interfaces.dll" description="redis用"></object>
+	<object name="ServiceStack.Redis.dll" description="redis用"></object>
+	<object name="ServiceStack.Text.dll" description="redis用"></object>
+	<object name="ChnCharInfo.dll" description="中文转换拼音帮助类用"></object>
+	
+</objects>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ICSharpCode.SharpZipLib.Patched</id>
+    <version>0.86.5</version>
+    <title>ICSharpCode.SharpZipLib.Patched</title>
+    <authors>SharpDevelop</authors>
+    <owners>SharpDevelop</owners>
+    <projectUrl>http://github.com/nano-byte/SharpZipLib</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A version of SharpZipLib with custom patches applied.</description>
+    <summary>A version of SharpZipLib with custom patches applied.</summary>
+    <references>
+      <reference file="ICSharpCode.SharpZipLib.dll" />
+    </references>
+  </metadata>
+</package>

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF9B9430-DE0E-4E6F-A762-2FEFBC09BB65}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cold.CommonLibrary</RootNamespace>
+    <AssemblyName>Cold.CommonLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ChnCharInfo">
+      <HintPath>..\CommonDll\ChnCharInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\ICSharpCode.SharpZipLib.Patched.0.86.5\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\packages\iTextSharp.5.5.9\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\CommonDll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB">
+      <HintPath>..\CommonDll\MongoDB.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.GridFS">
+      <HintPath>..\CommonDll\MongoDB.GridFS.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=4.0.54.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Common.4.0.54\lib\net40\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Interfaces.4.0.54\lib\portable-wp80+sl5+net40+win8+monotouch+monoandroid+xamarin.ios10\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis, Version=4.0.54.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Redis.4.0.54\lib\net40\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=4.0.54.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Text.4.0.54\lib\net40\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\CacheHelper.cs" />
+    <Compile Include="Config\WebConfigHelper.cs" />
+    <Compile Include="Convert\ConvertHelper.cs" />
+    <Compile Include="Convert\JsonHelper.cs" />
+    <Compile Include="Cookie\CookieHelper.cs" />
+    <Compile Include="CSV\CsvHelper.cs" />
+    <Compile Include="Date\ChineseCalHelper.cs" />
+    <Compile Include="Date\TimeHelper.cs" />
+    <Compile Include="DEncrypt\Base64DEncrypt.cs" />
+    <Compile Include="DEncrypt\DESDEncrypt.cs" />
+    <Compile Include="DEncrypt\FileDEncrypt.cs" />
+    <Compile Include="DEncrypt\HashDEncrypt.cs" />
+    <Compile Include="DEncrypt\MD5Encrypt.cs" />
+    <Compile Include="DEncrypt\RSADEncrypt.cs" />
+    <Compile Include="DEncrypt\TripleDESDEncrypt.cs" />
+    <Compile Include="DTO\AutoMapperHelper.cs" />
+    <Compile Include="Email\MailHelper.cs" />
+    <Compile Include="Enum\EnumHelper.cs" />
+    <Compile Include="Excel\ExcelHelper.cs" />
+    <Compile Include="File\DirectoryHelper.cs" />
+    <Compile Include="File\FileDownHelper.cs" />
+    <Compile Include="File\FileHelper.cs" />
+    <Compile Include="File\FileUpHelper.cs" />
+    <Compile Include="FTP\FTPClient.cs" />
+    <Compile Include="FTP\FTPHelper.cs" />
+    <Compile Include="Html\HtmlHelper.cs" />
+    <Compile Include="Html\JavaScriptHelper.cs" />
+    <Compile Include="Image\ImageDown.cs" />
+    <Compile Include="Image\ImageHelper.cs" />
+    <Compile Include="Image\ImageUpload.cs" />
+    <Compile Include="Log\LogHandler.cs" />
+    <Compile Include="Log\LogHelper.cs" />
+    <Compile Include="Media\MediaHelper.cs" />
+    <Compile Include="MongoDB\MongoDbHelper.cs" />
+    <Compile Include="MQ\MessageQueueHelper.cs" />
+    <Compile Include="Page\PageValidate.cs" />
+    <Compile Include="Page\ValidateImgPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Path\WebSitePathHelper.cs" />
+    <Compile Include="PDF\PDFOperationHelper.cs" />
+    <Compile Include="PinYin\PinYinHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Random\RandomHelper.cs" />
+    <Compile Include="Redis\RedisHelper.cs" />
+    <Compile Include="RMB\RMBHelper.cs" />
+    <Compile Include="Session\SessionHelper.cs" />
+    <Compile Include="SpringNet\SpringObjectFactory.cs" />
+    <Compile Include="String\StringHelper.cs" />
+    <Compile Include="Url\UrlHelper.cs" />
+    <Compile Include="Validator\ValidatorHelper.cs" />
+    <Compile Include="VerifyCode\VerifyCodeHelper.cs" />
+    <Compile Include="Video\VideoHelper.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\RequestHelper.cs" />
+    <Compile Include="Web\WebHelper.cs" />
+    <Compile Include="XML\XmlHelperExt.cs" />
+    <Compile Include="Zip\ZipHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib说明.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
