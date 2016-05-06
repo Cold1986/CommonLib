@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cold.CommonLibrary", "Cold.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cold.WebHelper", "Cold.WebHelper\Cold.WebHelper.csproj", "{A821DD9C-1287-403F-88D4-4F0D07692988}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Test", "02.Test", "{A34ED376-707E-451C-96BB-65BFA1CB4071}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Cold.CommonLibrary\Test\Test.csproj", "{563D8D3A-83CE-4FE4-BDFF-3A571E2094A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,10 @@ Global
 		{A821DD9C-1287-403F-88D4-4F0D07692988}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A821DD9C-1287-403F-88D4-4F0D07692988}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A821DD9C-1287-403F-88D4-4F0D07692988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{563D8D3A-83CE-4FE4-BDFF-3A571E2094A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{563D8D3A-83CE-4FE4-BDFF-3A571E2094A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{563D8D3A-83CE-4FE4-BDFF-3A571E2094A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{563D8D3A-83CE-4FE4-BDFF-3A571E2094A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -28,5 +36,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{CF9B9430-DE0E-4E6F-A762-2FEFBC09BB65} = {7FF2BC1B-EDD1-4AFF-AE03-1E8057DF1CF5}
 		{A821DD9C-1287-403F-88D4-4F0D07692988} = {7FF2BC1B-EDD1-4AFF-AE03-1E8057DF1CF5}
+		{563D8D3A-83CE-4FE4-BDFF-3A571E2094A0} = {A34ED376-707E-451C-96BB-65BFA1CB4071}
 	EndGlobalSection
 EndGlobal
