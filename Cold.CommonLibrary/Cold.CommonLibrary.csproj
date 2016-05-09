@@ -133,6 +133,7 @@
     <Compile Include="Session\SessionHelper.cs" />
     <Compile Include="Sort\BubbleSort.cs" />
     <Compile Include="Sort\InsertSort.cs" />
+    <Compile Include="Sort\QuickSort.cs" />
     <Compile Include="Sort\SelectSort.cs" />
     <Compile Include="SpringNet\SpringObjectFactory.cs" />
     <Compile Include="String\StringHelper.cs" />
