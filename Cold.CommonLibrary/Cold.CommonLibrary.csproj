@@ -132,9 +132,11 @@
     <Compile Include="RMB\RMBHelper.cs" />
     <Compile Include="Session\SessionHelper.cs" />
     <Compile Include="Sort\BubbleSort.cs" />
+    <Compile Include="Sort\HeapSort.cs" />
     <Compile Include="Sort\InsertSort.cs" />
     <Compile Include="Sort\QuickSort.cs" />
     <Compile Include="Sort\SelectSort.cs" />
+    <Compile Include="Sort\ShellSort.cs" />
     <Compile Include="SpringNet\SpringObjectFactory.cs" />
     <Compile Include="String\StringHelper.cs" />
     <Compile Include="Url\UrlHelper.cs" />

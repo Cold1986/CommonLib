@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Test.QuickSortTest</StartupObject>
+    <StartupObject>Test.DelegateTest</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DelegateTest.cs" />
     <Compile Include="ExceptionTest.cs" />
     <Compile Include="ExplicitTest.cs" />
     <Compile Include="ImplicitTest.cs" />
