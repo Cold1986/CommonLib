@@ -132,8 +132,10 @@
     <Compile Include="RMB\RMBHelper.cs" />
     <Compile Include="Session\SessionHelper.cs" />
     <Compile Include="Sort\BubbleSort.cs" />
+    <Compile Include="Sort\CountSort.cs" />
     <Compile Include="Sort\HeapSort.cs" />
     <Compile Include="Sort\InsertSort.cs" />
+    <Compile Include="Sort\MergeSort.cs" />
     <Compile Include="Sort\QuickSort.cs" />
     <Compile Include="Sort\SelectSort.cs" />
     <Compile Include="Sort\ShellSort.cs" />
