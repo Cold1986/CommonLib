@@ -9,7 +9,8 @@ using MongoDB.Configuration;
 using MongoDB.Linq;
 using System.Configuration;
 
-namespace Cold.CommonLibrary
+
+namespace Cold.CommonTools
 {
     public class MongoDbHelper<T> where T : class
     {
@@ -63,7 +64,7 @@ namespace Cold.CommonLibrary
         /// </summary>
         /// <param name="person"></param>
         /// <returns></returns>
-        public void Insert(string collectionName,T t)
+        public void Insert(string collectionName, T t)
         {
             using (Mongo mongo = new Mongo(configuration))
             {
@@ -95,7 +96,7 @@ namespace Cold.CommonLibrary
         /// </summary>
         /// <param name="person"></param>
         /// <returns></returns>
-        public void Update(string collectionName,T t, Expression<Func<T, bool>> func)
+        public void Update(string collectionName, T t, Expression<Func<T, bool>> func)
         {
             using (Mongo mongo = new Mongo(configuration))
             {
@@ -125,7 +126,7 @@ namespace Cold.CommonLibrary
         /// <summary>
         ///获取集合
         /// </summary>
-        public List<T> List(string collectionName,int pageIndex, int pageSize, Expression<Func<T, bool>> func, out int pageCount)
+        public List<T> List(string collectionName, int pageIndex, int pageSize, Expression<Func<T, bool>> func, out int pageCount)
         {
             pageCount = 0;
 
@@ -162,7 +163,7 @@ namespace Cold.CommonLibrary
         /// <summary>
         ///读取单条记录
         /// </summary>
-        public T Single(string collectionName,Expression<Func<T, bool>> func)
+        public T Single(string collectionName, Expression<Func<T, bool>> func)
         {
             using (Mongo mongo = new Mongo(configuration))
             {
@@ -194,7 +195,7 @@ namespace Cold.CommonLibrary
         /// <summary>
         /// 删除操作
         /// </summary>
-        public void Delete(string collectionName,Expression<Func<T, bool>> func)
+        public void Delete(string collectionName, Expression<Func<T, bool>> func)
         {
             using (Mongo mongo = new Mongo(configuration))
             {

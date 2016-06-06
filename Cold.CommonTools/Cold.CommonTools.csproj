@@ -36,7 +36,14 @@
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="MongoDB">
+      <HintPath>..\CommonDll\MongoDB.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.GridFS">
+      <HintPath>..\CommonDll\MongoDB.GridFS.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,6 +55,7 @@
     <Compile Include="DTO\AutoMapperHelper.cs" />
     <Compile Include="Log\LogHandler.cs" />
     <Compile Include="Log\LogHelper.cs" />
+    <Compile Include="NoSql\MongoDbHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -39,12 +39,6 @@
     <Reference Include="itextsharp">
       <HintPath>..\packages\iTextSharp.5.5.9\lib\itextsharp.dll</HintPath>
     </Reference>
-    <Reference Include="MongoDB">
-      <HintPath>..\CommonDll\MongoDB.dll</HintPath>
-    </Reference>
-    <Reference Include="MongoDB.GridFS">
-      <HintPath>..\CommonDll\MongoDB.GridFS.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -108,7 +102,6 @@
     <Compile Include="Image\ImageHelper.cs" />
     <Compile Include="Image\ImageUpload.cs" />
     <Compile Include="Media\MediaHelper.cs" />
-    <Compile Include="MongoDB\MongoDbHelper.cs" />
     <Compile Include="MQ\MessageQueueHelper.cs" />
     <Compile Include="Page\PageValidate.cs" />
     <Compile Include="Page\ValidateImgPage.cs">
