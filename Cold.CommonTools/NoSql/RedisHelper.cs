@@ -7,7 +7,7 @@ using ServiceStack.Redis;
 using Newtonsoft.Json;
 using System.IO;
 
-namespace Cold.CommonLibrary
+namespace Cold.CommonTools
 {
     public class RedisHelper : IDisposable
     {
