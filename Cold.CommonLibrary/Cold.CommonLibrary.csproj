@@ -39,9 +39,6 @@
     <Reference Include="itextsharp">
       <HintPath>..\packages\iTextSharp.5.5.9\lib\itextsharp.dll</HintPath>
     </Reference>
-    <Reference Include="log4net">
-      <HintPath>..\CommonDll\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="MongoDB">
       <HintPath>..\CommonDll\MongoDB.dll</HintPath>
     </Reference>
@@ -110,8 +107,6 @@
     <Compile Include="Image\ImageDown.cs" />
     <Compile Include="Image\ImageHelper.cs" />
     <Compile Include="Image\ImageUpload.cs" />
-    <Compile Include="Log\LogHandler.cs" />
-    <Compile Include="Log\LogHelper.cs" />
     <Compile Include="Media\MediaHelper.cs" />
     <Compile Include="MongoDB\MongoDbHelper.cs" />
     <Compile Include="MQ\MessageQueueHelper.cs" />

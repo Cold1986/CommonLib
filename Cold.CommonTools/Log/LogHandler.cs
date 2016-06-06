@@ -7,28 +7,24 @@ using System.Threading.Tasks;
 using log4net;
 using log4net.Config;
 
-namespace Cold.CommonLibrary
+[assembly: log4net.Config.XmlConfigurator(Watch = true)]
+namespace Cold.CommonTools
 {
-    public class LogHelper
+    [Serializable]
+    public class LogHandler
     {
-        public string Path { get; set; }
-         
-        public  LogHelper(string path)
-        {
-            this._loginfo = LogHandler.GetLogger(path);
-        }
+        public static readonly ILog _loginfo = LogManager.GetLogger("loginfo");
 
-        private   ILog _loginfo = LogManager.GetLogger("loginfo");
-        private ILog _logerror = LogManager.GetLogger("logerror");
+        public static readonly ILog _logerror = LogManager.GetLogger("logerror");
 
-        private  bool _isConfigured = false;
+        private static bool _isConfigured = false;
 
-        public  ILog GetLogger(Type type)
+        public static ILog GetLogger(Type type)
         {
             return GetLogger(string.Empty, type);
         }
 
-        public  ILog GetLogger(string path, Type type)
+        public static ILog GetLogger(string path, Type type)
         {
             if (!_isConfigured)
             {
@@ -55,7 +51,7 @@ namespace Cold.CommonLibrary
             return LogManager.GetLogger(type);
         }
 
-        public  ILog GetLogger(string name)
+        public static ILog GetLogger(string name)
         {
             if (!_isConfigured)
             {
@@ -67,17 +63,17 @@ namespace Cold.CommonLibrary
             return LogManager.GetLogger(name);
         }
 
-        public  void SetConfig()
+        public static void SetConfig()
         {
             log4net.Config.DOMConfigurator.Configure();
         }
 
-        public  void SetConfig(FileInfo configFile)
+        public static void SetConfig(FileInfo configFile)
         {
             log4net.Config.DOMConfigurator.Configure(configFile);
         }
 
-        public  void WriteLog(string info)
+        public static void WriteLog(string info)
         {
             if (_loginfo.IsInfoEnabled)
             {
@@ -85,7 +81,7 @@ namespace Cold.CommonLibrary
             }
         }
 
-        public  void WriteLog(string info, Exception se)
+        public static void WriteLog(string info, Exception se)
         {
             if (_logerror.IsErrorEnabled)
             {
