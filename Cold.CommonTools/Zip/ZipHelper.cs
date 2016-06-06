@@ -5,8 +5,7 @@ using Microsoft.Win32;
 
 using ICSharpCode.SharpZipLib.Checksums;
 using ICSharpCode.SharpZipLib.Zip;
-
-namespace Cold.CommonLibrary
+namespace Cold.CommonTools
 {
     /// <summary>
     /// Zip压缩、解压缩类

@@ -33,9 +33,6 @@
     <Reference Include="ChnCharInfo">
       <HintPath>..\CommonDll\ChnCharInfo.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>..\packages\ICSharpCode.SharpZipLib.Patched.0.86.5\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
     <Reference Include="itextsharp">
       <HintPath>..\packages\iTextSharp.5.5.9\lib\itextsharp.dll</HintPath>
     </Reference>
@@ -106,7 +103,7 @@
     <Compile Include="Sort\QuickSort.cs" />
     <Compile Include="Sort\SelectSort.cs" />
     <Compile Include="Sort\ShellSort.cs" />
-    <Compile Include="SpringNet\SpringObjectFactory.cs" />
+    <Compile Include="Ioc\SpringObjectFactory.cs" />
     <Compile Include="String\StringHelper.cs" />
     <Compile Include="Url\UrlHelper.cs" />
     <Compile Include="Validator\ValidatorHelper.cs" />
@@ -117,7 +114,6 @@
     <Compile Include="Web\RequestHelper.cs" />
     <Compile Include="Web\WebHelper.cs" />
     <Compile Include="XML\XmlHelperExt.cs" />
-    <Compile Include="Zip\ZipHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib说明.xml">
