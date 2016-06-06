@@ -2,9 +2,9 @@
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 
-namespace Cold.CommonLibrary
+namespace Cold.CommonTools
 {
-    class PDFOperationHelper
+    public class PDFOperationHelper
     {
         #region 构造函数
         /// <summary>

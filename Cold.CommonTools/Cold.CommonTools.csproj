@@ -36,6 +36,9 @@
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\packages\ICSharpCode.SharpZipLib.Patched.0.86.5\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\packages\iTextSharp.5.5.9\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
     </Reference>
@@ -75,6 +78,7 @@
     <Compile Include="Log\LogHelper.cs" />
     <Compile Include="NoSql\MongoDbHelper.cs" />
     <Compile Include="NoSql\RedisHelper.cs" />
+    <Compile Include="PDF\PDFOperationHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Zip\ZipHelper.cs" />
   </ItemGroup>

@@ -33,9 +33,6 @@
     <Reference Include="ChnCharInfo">
       <HintPath>..\CommonDll\ChnCharInfo.dll</HintPath>
     </Reference>
-    <Reference Include="itextsharp">
-      <HintPath>..\packages\iTextSharp.5.5.9\lib\itextsharp.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -89,7 +86,6 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Path\WebSitePathHelper.cs" />
-    <Compile Include="PDF\PDFOperationHelper.cs" />
     <Compile Include="PinYin\PinYinHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Random\RandomHelper.cs" />
