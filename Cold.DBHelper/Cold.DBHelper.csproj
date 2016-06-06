@@ -48,6 +48,7 @@
     <Compile Include="CommandInfo.cs" />
     <Compile Include="DbHelperMySQL.cs" />
     <Compile Include="DbHelperOleDb.cs" />
+    <Compile Include="DbHelperOra.cs" />
     <Compile Include="DbHelperSQL.cs" />
     <Compile Include="OracleHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
