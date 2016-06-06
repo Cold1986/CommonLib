@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 
-namespace Cold.CommonLibrary
+namespace Cold.CommonTools
 {
     /// <summary>
     /// AutoMapper扩展帮助类
@@ -68,4 +68,3 @@ namespace Cold.CommonLibrary
         }
     }
 }
-

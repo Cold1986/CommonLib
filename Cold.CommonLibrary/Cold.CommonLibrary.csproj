@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper">
-      <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
-    </Reference>
     <Reference Include="ChnCharInfo">
       <HintPath>..\CommonDll\ChnCharInfo.dll</HintPath>
     </Reference>
@@ -99,7 +96,6 @@
     <Compile Include="DEncrypt\MD5Encrypt.cs" />
     <Compile Include="DEncrypt\RSADEncrypt.cs" />
     <Compile Include="DEncrypt\TripleDESDEncrypt.cs" />
-    <Compile Include="DTO\AutoMapperHelper.cs" />
     <Compile Include="Email\MailHelper.cs" />
     <Compile Include="Enum\EnumHelper.cs" />
     <Compile Include="Excel\ExcelHelper.cs" />
