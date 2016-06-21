@@ -60,7 +60,8 @@ namespace Cold.CommonLibrary
             HttpCookie cookie = new HttpCookie(cookiename)
             {
                 Value = cookievalue,
-                Expires = expires
+                Expires = expires,
+                HttpOnly = true
             };
             HttpContext.Current.Response.Cookies.Add(cookie);
         }
