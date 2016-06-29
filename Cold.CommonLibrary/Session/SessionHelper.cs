@@ -117,5 +117,13 @@ namespace Cold.CommonLibrary
         {
             HttpContext.Current.Session[strSessionName] = null;
         }
+
+        /// <summary>
+        /// 取消Session对象
+        /// </summary>
+        public static void Abandon()
+        {
+            HttpContext.Current.Session.Abandon();
+        }
     }
 }
